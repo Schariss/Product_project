@@ -49,7 +49,7 @@ export default class FetchProducts extends React.Component {
                   width : 300,
                   Cell: row => (
                     <div>
-                      <a style={{display : "flex", justifyContent : "center"}} href={row.original.link} target="_blank"><img alt="none" rel="noreferrer" height="150" src={row.original.thumbnail}/></a>
+                      <a style={{display : "flex", justifyContent : "center"}} href={row.original.link}><img height="150" src={row.original.thumbnail} alt="none"/></a>
                       <p style={{textAlign : "center"}}>{row.original.name}</p>
                     </div>
                   )
@@ -153,7 +153,7 @@ export default class FetchProducts extends React.Component {
                  width :150,
                  Cell: row => (
                   <div>
-                    <a style={{display : "flex", justifyContent : "center", textDecoration : "none"}} href={row.original.datasheet} target="_blank"><button>Download file</button></a>
+                    <a style={{display : "flex", justifyContent : "center", textDecoration : "none"}} href={row.original.datasheet}><button>Download file</button></a>
                   </div>
                 )
                }

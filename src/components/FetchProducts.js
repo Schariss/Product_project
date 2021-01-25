@@ -49,7 +49,7 @@ export default class FetchProducts extends React.Component {
                   width : 300,
                   Cell: row => (
                     <div>
-                      <a style={{display : "flex", justifyContent : "center"}} href={row.original.link}><img height="150" src={row.original.thumbnail} alt="none"/></a>
+                      <a style={{display : "flex", justifyContent : "center"}} href={row.original.link}><img height="150" src={row.original.thumbnail} alt=""/></a>
                       <p style={{textAlign : "center"}}>{row.original.name}</p>
                     </div>
                   )
@@ -76,18 +76,18 @@ export default class FetchProducts extends React.Component {
                     ></ReactTable>
                     )
                 },
-                {
-                  Header: "Features",
-                  width :300,
-                  Cell: row => {
+                // {
+                //   Header: "Features",
+                //   width :300,
+                //   Cell: row => {
                     
-                    const myArrCreatedFromMap =  row.original.features.map((item, i) => (<li key={{i}}>{item}</li>)); 
-                    const myList = (
-                      <ul style={{padding : "20px", textAlign : "left", listStyle : "none", overflowX : "scroll"}}>{myArrCreatedFromMap}</ul> 
-                    )
-                    return myList
-                  },
-                },
+                //     const myArrCreatedFromMap =  row.original.features.map((item, i) => (<li key={{i}}>{item}</li>)); 
+                //     const myList = (
+                //       <ul style={{padding : "20px", textAlign : "left", listStyle : "none", overflowX : "scroll"}}>{myArrCreatedFromMap}</ul> 
+                //     )
+                //     return myList
+                //   },
+                // },
                 {
                   Header: "Category",
                   accessor: "category",

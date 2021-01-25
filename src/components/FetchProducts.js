@@ -76,18 +76,18 @@ export default class FetchProducts extends React.Component {
                     ></ReactTable>
                     )
                 },
-                // {
-                //   Header: "Features",
-                //   width :300,
-                //   Cell: row => {
+                {
+                  Header: "Features",
+                  width :300,
+                  Cell: row => {
                     
-                //     const myArrCreatedFromMap =  row.original.features.map((item, i) => (<li key={{i}}>{item}</li>)); 
-                //     const myList = (
-                //       <ul style={{padding : "20px", textAlign : "left", listStyle : "none", overflowX : "scroll"}}>{myArrCreatedFromMap}</ul> 
-                //     )
-                //     return myList
-                //   },
-                // },
+                    const myArrCreatedFromMap =  row.original.features.map((item, i) => (<li key={{i}}>{item}</li>)); 
+                    const myList = (
+                      <ul style={{padding : "20px", textAlign : "left", listStyle : "none", overflowX : "scroll"}}>{myArrCreatedFromMap}</ul> 
+                    )
+                    return myList
+                  },
+                },
                 {
                   Header: "Category",
                   accessor: "category",
